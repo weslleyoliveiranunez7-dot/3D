@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Guerra dos Segundos Eternos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="load" class="screen"><h2>Carregando…</h2></div>
+
+<div id="menu" class="screen hidden">
+  <h1>GUERRA DOS<br>SEGUNDOS ETERNOS</h1>
+  <p class="sub">O Despertar dos Guardiões</p>
+  <button id="btn-play">JOGAR</button>
+  <button id="btn-ctrl">CONTROLES</button>
+  <button id="btn-about">SOBRE</button>
+  <button class="small" id="btn-fx">Reduzir efeitos: NÃO</button>
+</div>
+
+<div id="sel" class="screen hidden">
+  <h2>Escolha seu herói</h2>
+  <div id="cards"></div>
+  <button id="btn-start">COMEÇAR MISSÃO</button>
+</div>
+
+<div id="hud" class="hidden">
+  <div id="top">
+    <div><b id="hname"></b><br><span id="hpower"></span><div class="bar"><i id="cdbar"></i></div></div>
+    <div id="mission"><span id="obj"></span><div class="bar"><i id="bar"></i></div></div>
+    <button id="bpause" class="round">II</button>
+  </div>
+  <div id="heroes"></div>
+  <div id="hint" class="hidden"></div>
+  <div id="joy"><div id="knob"></div></div>
+  <div id="look"></div>
+  <div id="btns">
+    <button id="bj" class="round big">PULO</button>
+    <button id="bp" class="round big">PODER</button>
+    <button id="bi" class="round big">AGIR</button>
+  </div>
+</div>
+
+<div id="dlg" class="screen hidden"><div class="box"><h2 id="dt"></h2><p id="dx"></p><button id="dok">OK</button></div></div>
+
+<div id="pause" class="screen hidden">
+  <h2>Pausado</h2>
+  <button id="bres">CONTINUAR</button>
+  <button id="bhome">VOLTAR AO INÍCIO</button>
+  <button class="small" id="btn-fx2">Reduzir efeitos: NÃO</button>
+</div>
+
+<div id="toast" class="hidden"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
